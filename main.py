@@ -63,6 +63,22 @@ def plot_with_grid():
     plt.show()
 
 
+def multiple_plots_with_subplot():
+    x1 = np.array([0, 1, 2, 3])
+    y1 = np.array([3, 8, 1, 10])
+    plt.subplot(2, 1, 1)
+    plt.plot(x1, y1)
+    plt.title("first plot title")
+
+    x2 = np.array([0, 1, 2, 3])
+    y2 = np.array([10, 20, 30, 40])
+    plt.subplot(2, 1, 2)
+    plt.plot(x2, y2)
+    plt.title("second plot title")
+    plt.suptitle("multiple plots title")
+    plt.show()
+
+
 if __name__ == '__main__':
     # xpoints = np.array([1, 2, 6, 8])
     # ypoints = np.array([3, 8, 1, 10])
@@ -70,4 +86,5 @@ if __name__ == '__main__':
     # plt.show()
     # plot_multiple_lines()
     # plot_line_with_labels_title()
-    plot_with_grid()
+    # plot_with_grid()
+    multiple_plots_with_subplot()
